@@ -1,4 +1,4 @@
-name: Hello world workflow
+name: Second workflow
 
 on:
   push: # 🏃🏼‍♂️ Keeps the original 'push' trigger
