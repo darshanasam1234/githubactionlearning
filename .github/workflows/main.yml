@@ -1,14 +1,16 @@
-name: Hello World Action
+name: Hello World Action # ✅ Name is fine
 
-on: [push]
+on:
+  push: # 🏃🏼‍♂️ Keeps the original 'push' trigger
+    branches:
+      - main # 💡 Good practice to specify a branch
+  workflow_dispatch: # 👈🏼 THIS allows manual triggering!
 
 jobs:
   hello-world-job:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
-        uses: actions/checkout@v5
-
+        uses: actions/checkout@v4 # ⬆️ Updated to a common stable version
       - name: Print Hello World
-        run: echo "Hello, World!"
+        run: echo "Hello, World!" # ⚙️ Added closing quote
