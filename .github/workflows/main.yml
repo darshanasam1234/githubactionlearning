@@ -16,3 +16,7 @@ jobs:
         run: echo "Hello, World!" # ⚙️ Added closing quote
       - name: List os version
         run: cat /etc/os-release # 🆕 New step to list OS version
+      - name: test something
+        run: $job.status # ❌ This line has an error and will cause the workflow to fail
+      - name: Final step
+        run: echo ${runner.id} # 🆕 New step to print the runner ID
