@@ -1,4 +1,4 @@
-name: Hello World Action # ✅ Name is fine
+name: Hello world workflow
 
 on:
   push: # 🏃🏼‍♂️ Keeps the original 'push' trigger
@@ -14,3 +14,5 @@ jobs:
         uses: actions/checkout@v4 # ⬆️ Updated to a common stable version
       - name: Print Hello World
         run: echo "Hello, World!" # ⚙️ Added closing quote
+      - name: List os version
+        run: cat /etc/os-release # 🆕 New step to list OS version
