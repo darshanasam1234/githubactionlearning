@@ -1,9 +1,7 @@
 name: Second workflow
 
 on:
-  push: # 🏃🏼‍♂️ Keeps the original 'push' trigger
-    branches:
-      - main # 💡 Good practice to specify a branch
+
   workflow_dispatch: # 👈🏼 THIS allows manual triggering!
 
 jobs:
