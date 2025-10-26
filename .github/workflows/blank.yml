@@ -1,0 +1,14 @@
+name: Azure CLI Workflow
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install Azure CLI
+        uses: azure/CLI@v1
+      # Now you can use az commands in the next steps
+      - name: Azure CLI Version
+        run: az --version
