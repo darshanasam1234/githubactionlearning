@@ -13,4 +13,4 @@ jobs:
     steps:
 
       - name: print msg
-        run: echo "hello , Github Actions"
+        uses: actions/setup-python
