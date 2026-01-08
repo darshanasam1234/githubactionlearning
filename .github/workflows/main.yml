@@ -7,10 +7,8 @@ on:
     branches: ["main"]
 
 jobs:
-  build:
+  hello-job:
     runs-on: ubuntu-latest
-
     steps:
-
-      - name: setup python
-        uses: actions/setup-python@v5
+      - name: print hello
+        run: echo "test"
