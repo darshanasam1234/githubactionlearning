@@ -12,3 +12,8 @@ jobs:
     steps:
       - name: print hello
         run: echo "test"
+  read-hostfile:
+    runs-on: ubuntu-latest
+    steps:
+     - name: read-hostfile
+       run: cat /etc/hosts
